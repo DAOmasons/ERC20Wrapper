@@ -21,15 +21,19 @@ contract wARB is ERC20, AccessControl, ReentrancyGuard {
     event Withdrawal(address indexed account, uint256 value);
     event Recovery(address indexed account, uint256 value);
 
-constructor() ERC20("WrappedArb", "wARB") AccessControl() {
-    IERC20 underlyingToken = IERC20(0x912CE59144191C1204E64559FE8253a0e49E6548);
-    _underlying = underlyingToken;
+    constructor(string memory name_, string memory symbol_, IERC20 underlyingToken) 
+        ERC20(name_, symbol_) 
+        AccessControl() 
+        ReentrancyGuard() 
+    {
+        require(address(underlyingToken) != address(0), "Invalid underlying token address");
 
-    // Setup roles
-    grantRole(DEFAULT_ADMIN_ROLE, _msgSender());
-    grantRole(RECOVERY_ROLE, _msgSender());
-}
+        _underlying = underlyingToken;
 
+        // Setup roles
+        _grantRole(DEFAULT_ADMIN_ROLE, _msgSender());
+        _grantRole(RECOVERY_ROLE, _msgSender());
+    }
 
     function decimals() public view override returns (uint8) {
         try IERC20Metadata(address(_underlying)).decimals() returns (uint8 value) {
