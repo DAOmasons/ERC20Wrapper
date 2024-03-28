@@ -1,6 +1,6 @@
 # Wrapped Arbitrum Token (wARB) Contract
 
-The Wrapped Arbitrum Token (wARB) contract is a Solidity project designed to wrap Arbitrum tokens, allowing them to be used in a variety of DeFi applications. This contract provides a standard ERC20 interface for underlying tokens, enabling them to interact seamlessly with Ethereum's broader ecosystem. This repository contains the code for the wARB contract along with instructions on how to deploy and interact with it.
+The Wrapped Arbitrum Token (wARB) contract is a Solidity project designed to wrap Arbitrum tokens, allowing them to be used in a variety of applications. This repository contains the code for the wARB contract along with instructions on how to deploy and interact with it.
 
 ## Getting Started
 
