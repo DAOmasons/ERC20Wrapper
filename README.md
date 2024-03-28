@@ -1,6 +1,6 @@
-# Wrapped Arbitrum Token (wARB) Contract
+# ERC20 Wrapper Token (wERC20) Contract
 
-The Wrapped Arbitrum Token (wARB) contract is a Solidity project designed to wrap Arbitrum tokens, allowing them to be used in a variety of applications. This repository contains the code for the wARB contract along with instructions on how to deploy and interact with it.
+The ERC20 Wrapper (wERC20) contract is a Solidity project designed to wrap ERC20 tokens, allowing them to be used in a variety of applications. This repository contains the code for the wARB contract along with instructions on how to deploy and interact with it.
 
 ## Getting Started
 
@@ -10,7 +10,7 @@ To use this contract as a foundation for your project, you can create a new proj
 npx thirdweb create --contract --template hardhat-javascript-starter
 ```
 
-After creating your project, you can find the wARB contract in `contracts/wARB.sol`. This is your main contract file, and you can start by reviewing and customizing its contents as needed.
+After creating your project, you can find the wARB contract in `contracts/wERC20.sol`. This is your main contract file, and you can start by reviewing and customizing its contents as needed.
 
 To enhance your contracts further, consider utilizing the `@thirdweb-dev/contracts` package, which offers a suite of base contracts and extensions. This package is pre-installed and allows for easy integration of additional features and utilities. Learn more about these options in the [Contracts Extensions Docs](https://docs.thirdweb.com/contracts).
 
