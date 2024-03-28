@@ -1,47 +1,53 @@
+# Wrapped Arbitrum Token (wARB) Contract
+
+The Wrapped Arbitrum Token (wARB) contract is a Solidity project designed to wrap Arbitrum tokens, allowing them to be used in a variety of DeFi applications. This contract provides a standard ERC20 interface for underlying tokens, enabling them to interact seamlessly with Ethereum's broader ecosystem. This repository contains the code for the wARB contract along with instructions on how to deploy and interact with it.
+
 ## Getting Started
 
-Create a project using this example:
+To use this contract as a foundation for your project, you can create a new project using the following command:
 
-```bash
+```shell
 npx thirdweb create --contract --template hardhat-javascript-starter
 ```
 
-You can start editing the page by modifying `contracts/Contract.sol`.
+After creating your project, you can find the wARB contract in `contracts/wARB.sol`. This is your main contract file, and you can start by reviewing and customizing its contents as needed.
 
-To add functionality to your contracts, you can use the `@thirdweb-dev/contracts` package which provides base contracts and extensions to inherit. The package is already installed with this project. Head to our [Contracts Extensions Docs](https://portal.thirdweb.com/contractkit) to learn more.
+To enhance your contracts further, consider utilizing the `@thirdweb-dev/contracts` package, which offers a suite of base contracts and extensions. This package is pre-installed and allows for easy integration of additional features and utilities. Learn more about these options in the [Contracts Extensions Docs](https://docs.thirdweb.com/contracts).
 
-## Building the project
+## Building the Project
 
-After any changes to the contract, run:
+Whenever you make changes to your contract, compile it to ensure everything is correct:
 
-```bash
+```shell
 npm run build
 # or
 yarn build
 ```
 
-to compile your contracts. This will also detect the [Contracts Extensions Docs](https://portal.thirdweb.com/contractkit) detected on your contract.
+This step compiles your Solidity contracts and checks for any compatibility with the Contracts Extensions Docs.
 
 ## Deploying Contracts
 
-When you're ready to deploy your contracts, just run one of the following command to deploy you're contracts:
+Once your contract is ready for deployment, execute one of the following commands to deploy it to the network:
 
-```bash
+```shell
 npm run deploy
 # or
 yarn deploy
 ```
 
+Ensure you have configured your deployment scripts and network settings in `hardhat.config.js` before running these commands.
+
 ## Releasing Contracts
 
-If you want to release a version of your contracts publicly, you can use one of the followings command:
+To publish a version of your contracts for public use, you can use the following commands. This step is particularly useful if you want to share your contract with a wider audience or for production use:
 
-```bash
+```shell
 npm run release
 # or
 yarn release
 ```
 
-## Join our Discord!
+---
 
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+By following these instructions, you can fork this repository, customize the wARB contract, and deploy it to suit your needs. Whether you're looking to integrate Arbitrum tokens into your applications or create new financial instruments, this project provides a solid starting point.
