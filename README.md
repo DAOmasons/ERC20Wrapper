@@ -1,5 +1,7 @@
 # ERC20 Wrapper (wERC20) Contract
 
+![](images/ethRapper.png)
+
 The ERC20 Wrapper (wERC20) contract is a Solidity project designed to wrap ERC20 tokens, allowing them to be used in a variety of applications. This repository contains the code for the wARB contract along with instructions on how to deploy and interact with it.
 
 ## Getting Started

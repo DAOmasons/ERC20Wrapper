@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
 import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
 
-contract wARB is ERC20, AccessControl, ReentrancyGuard {
+contract wERC20 is ERC20, AccessControl, ReentrancyGuard {
     bytes32 public constant RECOVERY_ROLE = keccak256("RECOVERY_ROLE");
     IERC20 private immutable _underlying;
 
