@@ -52,4 +52,3 @@ yarn release
 
 ---
 
-By following these instructions, you can fork this repository, customize the wARB contract, and deploy it to suit your needs. Whether you're looking to integrate Arbitrum tokens into your applications or create new financial instruments, this project provides a solid starting point.
